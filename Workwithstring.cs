@@ -1,5 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +7,7 @@ namespace DEV_1
     /// <summary>
     /// This class is for working with a string
     /// </summary>
-    class Workwithstring
+    class WorkWithString
     {
         private string currentString;
 
@@ -17,7 +15,7 @@ namespace DEV_1
         /// This method finds repetitions of the symbols in the string
         /// </summary>
         /// <returns> The maximum number of symbol repetitions per line </returns>
-        public int maxRepetition()
+        public int MaxRepetition()
         {
             int maxLength = 0;
             int count = 0;
@@ -32,21 +30,18 @@ namespace DEV_1
                         maxLength = count;
                     }
                 }
+                 return maxLength;
                 else
                 {
                     firstSymbol = currentString[i];
                     count = 0;
                 }
-            }
-            return maxLength;
+            }  
         }
 
-        public Workwithstring(string ourString)
+        public WorkWithString(string ourString)
         {
             currentString = ourString;
         }
     }
 }
-
-
-
