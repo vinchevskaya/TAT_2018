@@ -5,8 +5,11 @@ namespace DEV_1
     /// </summary>
     class WorkWithString
     {
+        public WorkWithString(string ourString)
+        {
+            currentString = ourString;
+        }
         private string currentString;
-
         /// <summary>
         /// This method finds repetitions of the symbols in the string
         /// </summary>
@@ -25,19 +28,14 @@ namespace DEV_1
                     {
                         maxLength = count;
                     }
-                     return maxLength;
                 }
                 else
                 {
                     firstSymbol = currentString[i];
                     count = 0;
                 }
-            }  
-        }
-
-        public WorkWithString(string ourString)
-        {
-            currentString = ourString;
-        }
+            }
+            return maxLength;
+        } 
     }
 }
