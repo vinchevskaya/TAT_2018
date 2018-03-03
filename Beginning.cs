@@ -21,8 +21,6 @@ namespace DEV_1
                 Console.WriteLine("wrong view");
             }
         }
-
-
     }
 }
 
