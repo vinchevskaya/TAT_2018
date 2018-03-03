@@ -25,8 +25,8 @@ namespace DEV_1
                     {
                         maxLength = count;
                     }
+                     return maxLength;
                 }
-                 return maxLength;
                 else
                 {
                     firstSymbol = currentString[i];
