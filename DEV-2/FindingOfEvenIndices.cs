@@ -20,11 +20,11 @@ namespace DEV_2
         /// </summary>
         public string FindSequenceEvenIndex()
         {
-            StringBuilder sb = new StringBuilder(entryString);
+            StringBuilder sb = new StringBuilder();
 
-            for (int i = 1; i < sb.Length; i++)
+            for (int i = 0; i < entryString.Length; i += 2)
             {
-                sb.Remove(i, 1);
+                sb.Append(entryString[i]);
             }
             return sb.ToString();
         }
