@@ -16,7 +16,7 @@ namespace DEV_2
         }
 
         /// <summary>
-        /// This method removes all odd indexes and displays even.
+        /// This method generates a string of characters with positive indices.
         /// </summary>
         public string FindSequenceEvenIndex()
         {
