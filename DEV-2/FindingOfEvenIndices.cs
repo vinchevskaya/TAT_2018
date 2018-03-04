@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace DEV_2
@@ -6,11 +6,11 @@ namespace DEV_2
     /// <summary>
     /// This class looks for all even indexes in a string.
     /// </summary>
-    class FindingOfEvenIndices
+    class OnlyEvenElementsOfTheString
     {
         private string entryString;
 
-        public FindingOfEvenIndices(string value)
+        public OnlyEvenElementsOfTheString(string value)
         {
             entryString = value;
         }
@@ -18,7 +18,7 @@ namespace DEV_2
         /// <summary>
         /// This method removes all odd indexes and displays even.
         /// </summary>
-        public void FindSequenceEvenIndex()
+        public string FindSequenceEvenIndex()
         {
             StringBuilder sb = new StringBuilder(entryString);
 
@@ -26,7 +26,7 @@ namespace DEV_2
             {
                 sb.Remove(i, 1);
             }
-            Console.WriteLine(sb);
+            return sb.ToString();
         }
     }
 }
