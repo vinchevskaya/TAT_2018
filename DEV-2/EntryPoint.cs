@@ -12,6 +12,7 @@ namespace DEV_2
         {
             OnlyEvenElementsOfTheString entryString = new OnlyEvenElementsOfTheString(Console.ReadLine());
             entryString.FindSequenceEvenIndex();
+            Console.WriteLine(entryString.FindSequenceEvenIndex());
         }  
     }  
 }
