@@ -10,8 +10,8 @@ namespace DEV_2
     {
         static void Main(string[] args)
         {
-            FindingOfEvenIndices inputString = new FindingOfEvenIndices(Console.ReadLine());
-            inputString.FindSequenceEvenIndex();
+            FindingOfEvenIndices entryString = new FindingOfEvenIndices(Console.ReadLine());
+            entryString.FindSequenceEvenIndex();
         }  
     }  
 }
