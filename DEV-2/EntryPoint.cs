@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace DEV_2
@@ -10,7 +10,7 @@ namespace DEV_2
     {
         static void Main(string[] args)
         {
-            FindingOfEvenIndices entryString = new FindingOfEvenIndices(Console.ReadLine());
+            OnlyEvenElementsOfTheString entryString = new OnlyEvenElementsOfTheString(Console.ReadLine());
             entryString.FindSequenceEvenIndex();
         }  
     }  
