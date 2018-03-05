@@ -11,7 +11,6 @@ namespace DEV_2
         static void Main(string[] args)
         {
             OnlyEvenElementsOfTheString entryString = new OnlyEvenElementsOfTheString(Console.ReadLine());
-            entryString.FindSequenceEvenIndex();
             Console.WriteLine(entryString.FindSequenceEvenIndex());
         }  
     }  
