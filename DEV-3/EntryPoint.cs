@@ -10,7 +10,6 @@ namespace DEV_3
             if (arg.Length != 2)
             {
                 Console.Write("Wrong number of arguments");
-                Console.ReadLine();
             }
             else
             {
@@ -18,8 +17,6 @@ namespace DEV_3
                 {
                     ConverterOfNumber conventer = new ConverterOfNumber(Int32.Parse(arg[0]), Int32.Parse(arg[1]));
                     Console.WriteLine($"Converted number: {conventer.СonvertDeciminalNumber()}");
-                    Console.ReadLine();
-                    Console.ReadKey();
                 }
             }
         }
