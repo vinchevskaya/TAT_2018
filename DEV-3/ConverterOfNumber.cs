@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace DEV_3
@@ -10,14 +10,28 @@ namespace DEV_3
     {
         int ConvertNumber;
         int radix;
-        
+
         /// <summary>
         /// Constructor instance.
         /// </summary>
         public ConverterOfNumber(int decimalValues, int radixNumber)
         {
-            ConvertNumber = decimalValues;
-            radix = radixNumber;
+            if (decimalValues < 0)
+            {
+                throw new System.ArgumentOutOfRangeException();
+            }
+            else
+            {
+                ConvertNumber = decimalValues;
+            }
+            if (radixNumber < 2 || radixNumber > 20)
+            {
+                throw new System.ArgumentOutOfRangeException();
+            }
+            else
+            {
+                radix = radixNumber;
+            }
         }
 
         /// <summary>
@@ -26,7 +40,7 @@ namespace DEV_3
         /// <returns>Return a converted number in another number system.</returns>
         public string СonvertDeciminalNumber()
         {
-            string resultNamber = "";
+            string resultNumber = "";
             int rest;
             int decimalNumber = ConvertNumber;
 
@@ -35,22 +49,22 @@ namespace DEV_3
                 rest = decimalNumber % radix;
                 if (rest < 9)
                 {
-                    resultNamber += rest;
+                    resultNumber += rest;
                 }
                 else
                 {
                     char newRadixNumber = (char)('A' + rest - 10);
-                    resultNamber += newRadixNumber;
+                    resultNumber += newRadixNumber;
                 }
                 decimalNumber /= radix;
             }
-            return (Сonverse(resultNamber));
+            return (Сonverse(resultNumber));
         }
 
         /// <summary>
         /// This method returns a value.
         /// </summary>
-        /// <returns>Converted string.</returns>
+        /// <returns>Converse string.</returns>
         private string Сonverse(string CounterString)
         {
             char[] ConvertString = CounterString.ToCharArray();
