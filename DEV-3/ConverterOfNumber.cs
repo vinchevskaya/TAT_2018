@@ -10,14 +10,14 @@ namespace DEV_3
     {
         int ConvertNumber;
         int radix;
-
+        
         /// <summary>
         /// Constructor instance.
         /// </summary>
-        public ConverterOfNumber(int arg1, int arg2)
+        public ConverterOfNumber(int decimalValues, int radixNumber)
         {
-            ConvertNumber = arg1;
-            radix = arg2;
+            ConvertNumber = decimalValues;
+            radix = radixNumber;
         }
 
         /// <summary>
@@ -26,24 +26,25 @@ namespace DEV_3
         /// <returns>Return a converted number in another number system.</returns>
         public string СonvertDeciminalNumber()
         {
-            string result = "";
+            string resultNamber = "";
             int rest;
-            int number = ConvertNumber;
-            while (number > 0)
+            int decimalNumber = ConvertNumber;
+
+            while (decimalNumber > 0)
             {
-                rest = number % radix;
-                if (rest <= 9)
+                rest = decimalNumber % radix;
+                if (rest < 9)
                 {
-                    result += rest;
+                    resultNamber += rest;
                 }
                 else
                 {
-                    char newRadix = (char)(55 + rest);
-                    result += newRadix;
+                    char newRadixNumber = (char)('A' + rest - 10);
+                    resultNamber += newRadixNumber;
                 }
-                number /= radix;
+                decimalNumber /= radix;
             }
-            return (Сonverse(result));
+            return (Сonverse(resultNamber));
         }
 
         /// <summary>
