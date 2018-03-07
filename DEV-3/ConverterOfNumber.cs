@@ -11,6 +11,9 @@ namespace DEV_3
         int ConvertNumber;
         int radix;
 
+        /// <summary>
+        /// Constructor instance.
+        /// </summary>
         public ConverterOfNumber(int arg1, int arg2)
         {
             ConvertNumber = arg1;
@@ -20,25 +23,25 @@ namespace DEV_3
         /// <summary>
         /// This method converts a decimal number to a new number system.
         /// </summary>
-        /// <returns> Return a converted number in another number system. </returns>
+        /// <returns>Return a converted number in another number system.</returns>
         public string СonvertDeciminalNumber()
         {
             string result = "";
             int rest;
-            int buffer = ConvertNumber;
-            while (buffer > 0)
+            int number = ConvertNumber;
+            while (number > 0)
             {
-                rest = buffer % radix;
-                if (rest < 9)
+                rest = number % radix;
+                if (rest <= 9)
                 {
                     result += rest;
                 }
                 else
                 {
-                    char newRadix = (char)(65 + rest - 10);
+                    char newRadix = (char)(55 + rest);
                     result += newRadix;
                 }
-                buffer = buffer / radix;
+                number /= radix;
             }
             return (Сonverse(result));
         }
@@ -46,8 +49,7 @@ namespace DEV_3
         /// <summary>
         /// This method returns a value.
         /// </summary>
-        /// <param name="CounterString">return string, taken from another method</param>
-        /// <returns>returns the reverse-converted string</returns>
+        /// <returns>Converted string.</returns>
         private string Сonverse(string CounterString)
         {
             char[] ConvertString = CounterString.ToCharArray();
@@ -56,4 +58,3 @@ namespace DEV_3
         }
     }
 }
-
