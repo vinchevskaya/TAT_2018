@@ -6,7 +6,7 @@ namespace DEV_2
     /// <summary>
     /// This class looks for all even indexes in a string.
     /// </summary>
-    class OnlyEvenElementsOfTheString
+    public class OnlyEvenElementsOfTheString
     {
         private string entryString;
 
@@ -20,6 +20,11 @@ namespace DEV_2
         /// </summary>
         public string FindSequenceEvenIndex()
         {
+            if (String.IsNullOrEmpty(entryString))
+            {
+                Console.WriteLine("You have null or empty string");
+                return null;
+            }
             StringBuilder sb = new StringBuilder();
 
             for (int i = 0; i < entryString.Length; i += 2)
