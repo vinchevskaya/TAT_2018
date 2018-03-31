@@ -1,0 +1,26 @@
+[
+  {
+    "Mark": "Jaguar",
+    "Model": "XE",
+    "Body type": "sedan",
+    "Transmission type": "automatic",
+    "Engine type": "petrol",
+    "Interior type": "leather"
+  },
+  {
+    "Mark": "Lexus",
+    "Model": "LX",
+    "Body type": "SUV",
+    "Transmission type": "automatic",
+    "Engine type": "diesel",
+    "Interior type": "leather"
+  },
+  {
+    "Mark": "Lada",
+    "Model": "4x4",
+    "Body type": "SUV",
+    "Transmission type": "manual",
+    "Engine type": "petrol",
+    "Interior type": "combined"
+  }
+]
