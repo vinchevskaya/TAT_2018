@@ -18,16 +18,16 @@ namespace DEV_8
                 do
                 {
                     var user = new UserBuilder();
-                    Console.WriteLine("\n1) Input the first name:");
+                    Console.WriteLine("\n Input the first name:");
                     user.SetFirstName(Console.ReadLine());
 
-                    Console.WriteLine("\n2) Input the surname:");
+                    Console.WriteLine("\n Input the surname:");
                     user.SetLastName((Console.ReadLine()));
 
-                    Console.WriteLine("\n3) Input the age:");
+                    Console.WriteLine("\n Input the age:");
                     user.SetAge(Console.ReadLine());
 
-                    Console.WriteLine("\n4) Input the sex:");
+                    Console.WriteLine("\n Input the sex:");
                     user.SetGender(Console.ReadLine());
 
                     users.Add(user.Build());
