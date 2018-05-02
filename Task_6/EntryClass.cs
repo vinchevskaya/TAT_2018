@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Task_6
 {
+    /// <summary>
+    /// It's an entry point in the program.
+    /// </summary>
     class EntryClass
     {
         static void Main(string[] args)
